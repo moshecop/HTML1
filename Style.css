@@ -30,7 +30,7 @@ z-index: 10;}
 }
 
 
-.pageBodyLeft, .pageBodyRight { flex: 18%; }
+.pageBodyLeft, .pageBodyRight { flex: 18%; background-image: linear-gradient(#4b92e6 48%,#23568d 48%, #1b98a1 48%); }
 .pageBodyCenter {
     flex: 51%;
     background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/1c/3e/ea/b5/open-water-fun.jpg");
