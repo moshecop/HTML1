@@ -1,36 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 .htmlBody { font-family: 'Roboto', sans-serif; }
-.pageBody, .pageBodyCenterBody, .pageHeaderMenu, .pageBodyCenterFooter { 
-    display: flex; 
-    flex-wrap: wrap; 
-    text-align: center; 
+.pageBody, .pageBodyCenterBody, .pageHeaderMenu, .pageBodyCenterFooter {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
     gap: 2%;
 }
-.pageBody { padding-left: 1.5%; padding-right: 1.5%; padding-bottom: 20px; }
-.pageHeader { 
-    padding-bottom: 60px; 
-    position: relative;
-    z-index: 10;
+.pageHeaderMenu480 {
+  display:none;
 }
+.menu480 {
+  display:none;
+}
+.pageBody {
+padding-left: 1.5%; padding-right: 1.5%; padding-bottom: 20px; }
+.pageHeader { padding-bottom: 60px;
+position: relative;
+z-index: 10;}
 .pageHeaderMenuLink { flex: 5%; }
 .pageHeaderMenuSpace { flex: 67%; }
 .pageHeaderMenuSearch { flex: 10%; }
 .pageHeaderMenuLink a {
-    
+
 }
-.pageHeaderMenu { 
-    background-color: rgba(94, 13, 13, 1); 
+.pageHeaderMenu {
+    background-color: rgba(94, 13, 13, 1);
     line-height: 60px;
     box-shadow: 0px 5px 5px rgba(0,0,0,.2);
 }
 
-.pageHeaderMenu480{
-    display: none;
-}
 
 .pageBodyLeft, .pageBodyRight { flex: 18%; }
-.pageBodyCenter { 
-    flex: 51%; 
+.pageBodyCenter {
+    flex: 51%;
     background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/1c/3e/ea/b5/open-water-fun.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -44,11 +46,11 @@
 }
 
 .pageBodyCenterBodyCard { flex: 20%; }
-.cardFace { 
-    border-radius: 100%; 
-    background-color: rgba(0, 0, 0, .4); 
-    width: 60px; 
-    height: 60px; 
+.cardFace {
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    width: 60px;
+    height: 60px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -57,7 +59,7 @@
     padding: 10px;
 }
 
-.pageBodyCenterFooter { 
+.pageBodyCenterFooter {
     padding: 10px 40px 30px 40px;
     background-color: white;
     border: 1px solid rgba(0,0,0,.7);
@@ -67,9 +69,9 @@
     margin-right: auto;
 }
 .pageBodyCenterHeader { padding-bottom: 50px; }
-.pageBodyCenterBody { 
+.pageBodyCenterBody {
     padding-left: 10%;
-    padding-right: 10%; 
+    padding-right: 10%;
     padding-bottom: 100px;
 }
 .card {
@@ -95,64 +97,61 @@
     background-repeat: no-repeat;
     height: 100%;
 }
-.searchInput { 
-    border-radius: 4px; 
-    border: 1px solid rgba(0, 0, 0, .7); 
-    width: 80%; 
+.searchInput {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, .7);
+    width: 80%;
     padding-left: 15px;
 }
 
-.a1 { 
+.a1 {
     text-decoration: none;
     font-weight: bold;
-    font-size: 24px; 
+    font-size: 24px;
     color: green;
 }
 .a2 {
     text-decoration: none;
     font-weight: bold;
-    font-size: 24px; 
+    font-size: 24px;
     color: red;
 }
 .a3 {
     text-decoration: none;
     font-weight: bold;
-    font-size: 24px; 
+    font-size: 24px;
     color: yellow;
 }
-.hide {display: none !important;}
-
-@media only screen and (max-width: 480px) {
-    .pageHeaderMenu
-    { 
-        display: none;
-    }
-    .pageHeaderMenu480
-    { 
-        display: block; 
-        background-color: rgba(94, 13, 13, 1);
-        height: 60px;
-    }
-    .menu480
-    { 
-        border: 1px solid black;
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        color: rgba(94, 13, 13, 1);
-        width: 40%;
-        text-align:center;
-        overflow-y: visible;
-        position: relative;
-        top: 34px;
-        left: 20px;
-    }
-    .pageHeaderMenuLink {
-        color: rgba(94, 13, 13, 1);
-    }
-    .imgbtn480{
-        width: 20px;
-        height: 20px;
-    }
+.hide {
+  display: none !important;
 }
-
+@media only screen and (max-width: 480px) {
+  .pageHeaderMenu480 {
+    display:block;
+    background-color: rgba(94, 13, 13, 1);
+    height: 60px;
+  }
+  .pageHeaderMenu {
+    display:none;
+  }
+  .menu480 {
+    z-index: 10;
+    background-color: white;
+    border:1px solid  rgba(94, 13, 13, 1);
+    text-align:center;
+    display: flex;
+    flex-direction:column;
+    overflow-y: visible;
+    width: 50%;
+    position: relative;
+    top: 20px;
+    left:20px;
+  }
+  .pageHeaderMenuLink {
+    color: rgba(94, 13, 13, 1);
+  }
+  .imgbtn480{
+    width: 20px;
+    height: 20px;
+  }
+}
